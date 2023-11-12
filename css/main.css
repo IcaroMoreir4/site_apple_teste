@@ -1,0 +1,138 @@
+nav{
+    background-color: #121212;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    font-size: 12px;
+}
+
+nav a{
+    color: rgba(255, 255, 255, .8);
+    padding: 0px 20px;
+    font-weight: 100;
+    text-wrap: nowrap;
+    display: inline-block;
+}
+
+nav a img{
+    max-width: 100%;
+}
+
+nav a:hover{
+    color: #fff;
+}
+
+nav img{
+    width: 16px;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.fundo{
+    background: url('/img/iphone-background.jpg') center/cover no-repeat;
+    position: relative;
+    height: 630px;
+}
+
+.conteudo{
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    max-width: 800px;
+    text-align: center;
+}
+
+.conteudo h1{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.conteudo h2{
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.conteudo .links a{
+    color: #258AE9;
+    font-size: 1.5rem;
+    margin-right: 40px;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+.menulist{
+    display: none;
+}
+
+.pequeno{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1050px) {
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+        font-size: 12px;
+    }
+    nav a{
+        padding: 0px 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 980px){
+    .sumi{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 830px){
+
+    .conteudo h1{
+        font-size: 3rem;
+        text-wrap: nowrap;
+    }
+    
+    .conteudo h2{
+        font-size: 1.5rem;
+    }
+    
+    .conteudo .links a{
+        font-size: 1rem;
+        margin-right: 20px;
+    }
+
+    nav .grande{
+        display: none;
+    }
+
+    .pequeno {
+        display: flex;
+
+}
+
+}
